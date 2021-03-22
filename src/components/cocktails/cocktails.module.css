@@ -1,0 +1,250 @@
+.cocktailsSection {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.47)),
+    url("../../images/sectionBackgrounds/bg4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  position: relative;
+  font-size: 85px;
+  font-family: "EngraversMT";
+  letter-spacing: 6px;
+  text-align: center;
+  margin-top: -20px;
+  margin-left: 110px;
+  background-image: url(../../images/paper.jpg);
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Cocktail card */
+
+.cocktails {
+  position: relative;
+  top: 140px;
+  left: 12vw;
+  width: 600px;
+  height: 400px;
+  display: flex;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.slideInner {
+  position: relative;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.cardFront,
+.cardBack {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  background-image: url(../../images/paper.jpg);
+}
+
+.cardBack {
+  position: absolute;
+  top: 0;
+  transform: rotateY(180deg);
+  padding: 30px;
+}
+
+.cardBack p {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+b {
+  color: #5e1205;
+  pointer-events: none;
+}
+
+.cardFront p {
+  position: absolute;
+  top: 10px;
+  font-size: 40px;
+  font-family: "EngraversMT";
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.product {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.showRecipe {
+  position: absolute;
+  bottom: 0px;
+  border: none;
+  width: 100%;
+  height: 60px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 34px;
+  font-family: "EngraversMT";
+  color: #5e1205;
+  border-top: 3px solid black;
+  background: none;
+  outline: none;
+}
+
+/* Transition properties */
+.transition {
+  position: absolute;
+  width: 100vw;
+  height: 100px;
+  margin-top: -60px;
+}
+
+.transition::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-top: 100px solid black;
+  box-sizing: border-box;
+  filter: url(#wavy3);
+}
+
+.cocktailsSection svg {
+  width: 0;
+  height: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .cocktailsSection {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.47)),
+      url("../../images/sectionBackgrounds/bg8.png");
+    background-size: contain;
+    background-color: black;
+    background-position-x: right;
+  }
+
+  .cocktails {
+    margin: auto;
+    top: 0;
+    left: 3.5vw;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .cocktails {
+    left: 0;
+  }
+
+  h2 {
+    margin-top: -55px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  h2 {
+    margin-left: 0;
+  }
+
+  .cocktails {
+    width: 620px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  h2 {
+    margin-top: -35px;
+    font-size: 65px;
+  }
+
+  .cocktailsSection {
+    background-position-y: 70px;
+  }
+
+  .cocktails {
+    width: 350px;
+    height: 440px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .cocktailsSection {
+    height: 85vh;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h2 {
+    margin-top: -15px;
+    font-size: 52px;
+  }
+
+  .cocktailsSection {
+    height: 80vh;
+    background-size: cover;
+    background-position-y: 20px;
+  }
+
+  .cocktails {
+    width: 310px;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .cocktailsSection {
+    height: 70vh;
+  }
+
+  h2 {
+    font-size: 55px;
+    margin: 0 3vw;
+    margin-top: -70px;
+    text-align: center;
+    line-height: 50px;
+  }
+
+  .cocktails {
+    width: 290px;
+    height: 360px;
+    top: 20px;
+  }
+
+  .product {
+    max-width: 220px;
+    max-height: 220px;
+  }
+
+  .cardBack p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .cocktailsSection {
+    height: 95vh;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-height: 1024px) {
+  .cocktailsSection {
+    height: 75vh;
+  }
+}

@@ -1,0 +1,377 @@
+.navigation,
+.navigation2,
+.navigation3,
+.navigation4,
+.navigation5 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 115vw;
+  background-image: url(../../images/navigation/cowgirl1.png),
+    url(../../images/navigation/cowgirl2.png),
+    url(../../images/sectionBackgrounds/bg6.jpg);
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-size: contain, contain;
+  background-position-x: left, 60vw;
+  background-position-y: 0px;
+  z-index: 10;
+  display: flex;
+  justify-content: flex-end;
+  transition: transform 0.6s linear;
+  transform: translateX(-93%);
+}
+
+.navigation2 {
+  background-image: url(../../images/navigation/cowgirl1.png),
+    url(../../images/navigation/cowgirl3.png),
+    url(../../images/sectionBackgrounds/bg6.jpg);
+  background-position-x: left, 75vw;
+}
+
+.navigation3 {
+  background-image: url(../../images/navigation/cowgirl1.png),
+    url(../../images/navigation/cowgirl4.png),
+    url(../../images/sectionBackgrounds/bg6.jpg);
+  background-position-x: left, 75vw;
+}
+
+.navigation4 {
+  background-image: url(../../images/navigation/cowgirl1.png),
+    url(../../images/navigation/cowgirl5.png),
+    url(../../images/sectionBackgrounds/bg6.jpg);
+  background-position-x: left, 60vw;
+}
+
+.navigation5 {
+  background-image: url(../../images/navigation/cowgirl1.png),
+    url(../../images/navigation/cowgirl6.png),
+    url(../../images/sectionBackgrounds/bg6.jpg);
+  background-position-x: left, 60vw;
+  background-position-y: 0, 80px, 0;
+}
+
+.visible {
+  display: flex;
+  width: 8vw;
+  justify-content: center;
+}
+
+.menuBtn {
+  position: absolute;
+  top: 30px;
+  height: 25px;
+  width: 6vw;
+  border-top: 2px solid #5e1205;
+  border-bottom: 2px solid #5e1205;
+  cursor: pointer;
+}
+
+.menuBtn:hover {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.logo {
+  position: absolute;
+  top: 12vh;
+  height: 11vh;
+  width: 7vw;
+}
+
+.title {
+  position: absolute;
+  top: 58vh;
+  width: 500px;
+  font-size: 48px;
+  color: #5e1205;
+  font-family: "EngraversMT";
+  letter-spacing: 6px;
+  transform: rotate(90deg);
+  user-select: none;
+}
+
+.mapLogo {
+  position: absolute;
+  top: 87vh;
+  height: 10vh;
+  width: 5vw;
+  cursor: pointer;
+}
+
+.mapLogo:hover {
+  color: black;
+}
+
+.menu {
+  position: absolute;
+  left: 30vw;
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.centerTitle {
+  display: none;
+}
+
+.links {
+  width: fit-content;
+  font-size: 65px;
+  font-family: "EngraversMT";
+  letter-spacing: 6px;
+  line-height: 90px;
+  cursor: pointer;
+  user-select: none;
+  color: #5e1205;
+  text-decoration: none;
+}
+
+#closeMenu {
+  color: black;
+}
+
+.links:hover {
+  font-size: 75px;
+  color: black;
+}
+
+@media only screen and (max-width: 1200px) {
+  .navigation,
+  .navigation2,
+  .navigation3,
+  .navigation4,
+  .navigation5 {
+    background-image: url(../../images/navigation/cowgirl1.png),
+      url(../../images/sectionBackgrounds/bg6.jpg);
+    background-repeat: no-repeat, repeat;
+    background-size: contain;
+    background-position-x: left;
+    background-position-y: 0px;
+  }
+
+  .menu {
+    left: 40vw;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .navigation,
+  .navigation2,
+  .navigation3,
+  .navigation4,
+  .navigation5 {
+    background-position-y: -85px, 0px;
+    background-position-x: -50px;
+    width: 100vw;
+    height: 110vh;
+    transform: translateX(0);
+    transform: translateY(-90%);
+  }
+
+  .menu {
+    left: 50vw;
+    margin-top: -20px;
+  }
+
+  .menu div {
+    margin-bottom: 30px;
+  }
+
+  .links {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .menuBtn {
+    top: unset;
+    bottom: 28px;
+    left: 30px;
+  }
+
+  .logo {
+    top: unset;
+    height: 60px;
+    width: 70px;
+    bottom: 10px;
+    left: 14vw;
+  }
+
+  .title {
+    top: unset;
+    left: 28vw;
+    bottom: 8px;
+    font-size: 60px;
+    width: 65vw;
+    transform: rotate(0deg);
+  }
+
+  .mapLogo {
+    top: unset;
+    bottom: 15px;
+    left: 90vw;
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navigation,
+  .navigation2,
+  .navigation3,
+  .navigation4,
+  .navigation5 {
+    background-image: url(../../images/Depositphotos_12101795_xl-2015.jpg);
+    background-size: cover;
+    background-position-y: -40px;
+    background-position-x: center;
+    height: 115vh;
+    transform: translateY(-88%);
+  }
+
+  .visible {
+    background-image: url(../../images/sectionBackgrounds/bg6.jpg);
+    background-size: contain;
+    width: 100vw;
+    padding: 0 5vw;
+    height: 105px;
+    position: absolute;
+    justify-content: space-between;
+    bottom: 0px;
+  }
+
+  #title {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .menuBtn {
+    position: relative;
+    top: 50%;
+    left: 0px;
+    margin-right: 40px;
+  }
+
+  .centerTitle {
+    display: flex;
+    justify-content: center;
+  }
+
+  .title {
+    position: relative;
+    width: auto;
+    left: -15px;
+    top: 40px;
+    font-size: 35px;
+    word-spacing: 80px;
+  }
+
+  .bull {
+    display: block;
+    position: absolute;
+    bottom: -45px;
+    height: 180px;
+    width: 320px;
+    z-index: 1;
+  }
+
+  .mapLogo {
+    position: relative;
+    top: 50%;
+    left: 0;
+  }
+
+  .menu {
+    width: 100%;
+    left: 0px;
+    align-items: center;
+  }
+
+  .links {
+    background-color: white;
+    font-size: 45px;
+    padding: 10px 20px;
+  }
+
+  .links:hover {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    top: 38px;
+    font-size: 24px;
+    word-spacing: 60px;
+    left: -10px;
+  }
+
+  .bull {
+    bottom: -20px;
+    height: 140px;
+    width: 240px;
+  }
+
+  .menuBtn {
+    width: 8vw;
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navigation,
+  .navigation2,
+  .navigation3,
+  .navigation4,
+  .navigation5 {
+    height: 120vh;
+  }
+
+  .visible {
+    height: 115px;
+    bottom: 0px;
+  }
+
+  .title {
+    display: none;
+  }
+
+  .bull {
+    bottom: -12px;
+    height: 120px;
+    width: 180px;
+  }
+
+  .menuBtn {
+    top: 50%;
+    margin-right: 0;
+    height: 15px;
+  }
+
+  .mapLogo {
+    height: 30px;
+    width: 30px;
+  }
+
+  .links {
+    font-size: 30px;
+    padding: 16px;
+  }
+
+  .links:hover {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .bull {
+    bottom: -12px;
+    height: 100px;
+    width: 160px;
+  }
+}

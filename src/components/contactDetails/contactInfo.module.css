@@ -1,0 +1,285 @@
+.contactDetails {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.27)),
+    url(../../images/sectionBackgrounds/bg5.jpg);
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.contactInfo {
+  margin-left: 10vw;
+  height: 100%;
+  width: 90vw;
+}
+
+.addressArrow,
+.emailArrow,
+.phoneArrow,
+.socialNetworksArrow {
+  position: absolute;
+  right: -150px;
+  top: 50px;
+  z-index: 1;
+  width: 600px;
+}
+
+.emailArrow {
+  top: 170px;
+}
+
+.phoneArrow {
+  top: 290px;
+}
+
+.socialNetworksArrow {
+  top: 410px;
+}
+
+.address,
+.email,
+.phone {
+  position: absolute;
+  right: 0px;
+  top: 200px;
+  width: 330px;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 1);
+  letter-spacing: 2px;
+  font-size: 30px;
+  font-family: "EngraversMT";
+  z-index: 2;
+  color: #5e1205;
+}
+
+.email {
+  top: 340px;
+}
+
+.phone {
+  width: 260px;
+  top: 450px;
+  font-size: 50px;
+}
+
+.socialNetworks {
+  position: absolute;
+  right: 20px;
+  top: 570px;
+  z-index: 2;
+}
+
+.socialNetworks img {
+  width: 50px;
+  height: 50px;
+  margin-right: 40px;
+}
+
+/* Transition properties */
+.transition {
+  position: absolute;
+  top: -40px;
+  width: 100vw;
+  height: 100px;
+  z-index: 4;
+}
+
+.transition::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-top: 100px solid black;
+  box-sizing: border-box;
+  filter: url(#wavy3);
+}
+
+.contactDetails svg {
+  width: 0;
+  height: 0;
+}
+
+.mapIcon,
+.emailIcon,
+.phoneIcon {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .contactDetails {
+    background-position-x: -100px;
+  }
+
+  .addressArrow,
+  .emailArrow,
+  .phoneArrow,
+  .socialNetworksArrow {
+    width: 500px;
+  }
+
+  .address,
+  .email,
+  .phone {
+    width: 300px;
+    font-size: 24px;
+    right: -30px;
+  }
+
+  .address {
+    top: 180px;
+  }
+
+  .email {
+    top: 315px;
+  }
+
+  .phone {
+    top: 420px;
+    right: -60px;
+    font-size: 50px;
+  }
+
+  .socialNetworks {
+    right: -20px;
+    top: 540px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .contactDetails {
+    background-position-x: -300px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .addressArrow,
+  .emailArrow,
+  .socialNetworksArrow {
+    display: none;
+  }
+
+  .phoneArrow {
+    right: unset;
+    left: -200px;
+    top: 300px;
+    width: 900px;
+    transform: rotateY(180deg);
+  }
+
+  .address,
+  .email,
+  .phone {
+    width: 600px;
+    font-size: 26px;
+    right: unset;
+    left: 20px;
+    top: 530px;
+    color: black;
+  }
+
+  .email {
+    top: 570px;
+  }
+
+  .phone {
+    top: 600px;
+    font-size: 40px;
+  }
+
+  .socialNetworks {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contactDetails {
+    background-position-x: center;
+  }
+
+  .infoField {
+    display: flex;
+    width: 80vw;
+    margin: 0 4vw;
+    min-height: 45px;
+    align-items: center;
+  }
+
+  .contactInfo {
+    position: absolute;
+    bottom: 0px;
+    margin-left: 0;
+    width: 100vw;
+    height: 165px;
+    backdrop-filter: blur(14px);
+  }
+
+  .phoneArrow {
+    display: none;
+  }
+
+  .address,
+  .email,
+  .phone {
+    position: relative;
+    top: 0vh;
+    left: 30px;
+  }
+
+  .address {
+    margin-top: 10px;
+  }
+
+  .phone {
+    font-size: 35px;
+  }
+
+  .mapIcon,
+  .emailIcon,
+  .phoneIcon {
+    display: inline-block;
+    height: 30px !important;
+    font-size: 30px;
+  }
+
+  .emailIcon {
+    font-size: 25px;
+  }
+
+  .phoneIcon {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .address,
+  .email,
+  .phone {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .phone {
+    font-size: 32px;
+  }
+
+  .mapIcon {
+    font-size: 25px;
+  }
+
+  .emailIcon {
+    top: 9.5vh;
+    font-size: 20px;
+  }
+
+  .phoneIcon {
+    top: 16vh;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .contactInfo {
+    height: 185px;
+  }
+}

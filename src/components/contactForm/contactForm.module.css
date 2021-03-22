@@ -1,0 +1,169 @@
+.formSection {
+  display: none;
+  animation: show 2s linear;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.contactForm {
+  position: fixed;
+  left: 52%;
+  transform: translateX(-50%);
+  top: 50px;
+  height: 650px;
+  width: 480px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+  background-image: url(../../images/poster.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 11;
+}
+
+.contactUs {
+  position: absolute;
+  top: 110px;
+  left: 70px;
+  font-size: 85px;
+  color: #a6110b;
+  font-family: "EngraversMT";
+  letter-spacing: 8px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 10px;
+  height: 80%;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.formField label {
+  position: relative;
+  color: #5e1205;
+  font-weight: 600;
+}
+
+.formField input,
+textarea {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px 0;
+  border-bottom: 2px solid #5e1205;
+  font-weight: 600;
+  font-size: 80%;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  width: 90%;
+}
+
+.formField input[type="tel"] {
+  height: 40px !important;
+  width: 90% !important;
+  border: 1px solid #5e1205 !important;
+  background: transparent;
+  font-size: 16px !important;
+}
+
+.phoneLabel {
+  margin-bottom: 10px;
+}
+
+.submitBtn {
+  width: 260px;
+  height: 45px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  margin-right: 20px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  background-color: #a6110b;
+  color: white;
+  cursor: pointer;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+@media only screen and (max-width: 768px) {
+  .contactForm {
+    top: 30px;
+    height: 600px;
+    width: 400px;
+  }
+
+  .contactUs {
+    top: 100px;
+    left: 50px;
+    font-size: 70px;
+  }
+
+  .form {
+    height: 85%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .contactForm {
+    top: 40px;
+    height: 500px;
+    width: 90vw;
+  }
+
+  .contactUs {
+    top: 11vh;
+    left: 13vw;
+    font-size: 15vw;
+  }
+
+  .form {
+    height: 90%;
+  }
+
+  .formField {
+    margin-bottom: 25px;
+  }
+
+  .submitBtn {
+    position: absolute;
+    bottom: -60px;
+  }
+}
