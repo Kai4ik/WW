@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import $ from "jquery";
 import styles from "./navigation.module.css";
 import { HashLink } from "react-router-hash-link";
