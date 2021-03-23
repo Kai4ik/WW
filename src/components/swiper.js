@@ -17,7 +17,7 @@ const Slider = ({ children }) => {
         centeredSlides: true,
       },
     },
-    loop: true,
+    //loop: true,
     coverflowEffect: {
       rotate: 0,
       stretch: 0, // Stretch space between slides (in px)
@@ -25,10 +25,10 @@ const Slider = ({ children }) => {
       modifier: 1, // Effect multiplier
       slideShadows: true, // Enables slides shadows
     },
-    autoplay: {
+    /*autoplay: {
       delay: 2000,
-      disableOnInteraction: false,
-    },
+      disableOnInteraction: true,
+    },*/
   };
 
   return <Swiper {...params}>{children}</Swiper>;

@@ -28,8 +28,8 @@
   left: 52%;
   transform: translateX(-50%);
   top: 50px;
-  height: 650px;
-  width: 480px;
+  height: 45vw;
+  width: 35vw;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -41,29 +41,22 @@
   z-index: 11;
 }
 
-.contactUs {
-  position: absolute;
-  top: 110px;
-  left: 70px;
-  font-size: 85px;
-  color: #a6110b;
-  font-family: "EngraversMT";
-  letter-spacing: 8px;
-}
-
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   margin-left: 10px;
-  height: 80%;
+  height: 70%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .formField {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 70%;
   margin-bottom: 20px;
 }
 
@@ -71,6 +64,7 @@
   position: relative;
   color: #5e1205;
   font-weight: 600;
+  font-size: 1.3vw;
 }
 
 .formField input,
@@ -81,18 +75,18 @@ textarea {
   padding: 10px 0;
   border-bottom: 2px solid #5e1205;
   font-weight: 600;
-  font-size: 80%;
+  font-size: 1vw;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
   width: 90%;
 }
 
 .formField input[type="tel"] {
-  height: 40px !important;
+  height: 5vh !important;
   width: 90% !important;
   border: 1px solid #5e1205 !important;
   background: transparent;
-  font-size: 16px !important;
+  font-size: 1vw !important;
 }
 
 .phoneLabel {
@@ -106,7 +100,7 @@ textarea {
   font-weight: 700;
   letter-spacing: 2px;
   border-radius: 5px;
-  margin-right: 20px;
+  margin-right: 35px;
   margin-top: 10px;
   border: none;
   outline: none;
@@ -123,47 +117,85 @@ input:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1400px) {
   .contactForm {
-    top: 30px;
-    height: 600px;
-    width: 400px;
+    top: 20px;
+    height: 58vw;
+    width: 44vw;
   }
 
-  .contactUs {
-    top: 100px;
-    left: 50px;
-    font-size: 70px;
+  .formField input,
+  textarea {
+    font-size: 16px;
   }
 
-  .form {
-    height: 85%;
+  .formField label {
+    font-size: 18px;
+  }
+
+  .formField input[type="tel"] {
+    font-size: 1.5vw !important;
+  }
+}
+
+@media only screen and (min-width: 2100px) {
+  .submitBtn {
+    width: 340px;
+    height: 95px;
+    font-size: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .contactForm {
+    top: 20px;
+    height: 65vw;
+    width: 50vw;
+  }
+
+  .formField input[type="tel"] {
+    font-size: 2vw !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .contactForm {
+    top: 10px;
+    height: 650px;
+    width: 500px;
+  }
+
+  .formField input[type="tel"] {
+    font-size: 2.4vw !important;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .contactForm {
-    top: 40px;
-    height: 500px;
-    width: 90vw;
-  }
-
-  .contactUs {
-    top: 11vh;
-    left: 13vw;
-    font-size: 15vw;
-  }
-
-  .form {
-    height: 90%;
+    top: 20px;
+    height: 550px;
+    width: 400px;
   }
 
   .formField {
     margin-bottom: 25px;
   }
 
+  .formField input[type="tel"] {
+    font-size: 4vw !important;
+  }
+
   .submitBtn {
     position: absolute;
-    bottom: -60px;
+    bottom: -20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-height: 960px) {
+  .contactForm {
+    top: 30px;
+    height: 100vw;
+    width: 75vw;
   }
 }

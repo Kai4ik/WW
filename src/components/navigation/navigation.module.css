@@ -13,7 +13,7 @@
     url(../../images/sectionBackgrounds/bg6.jpg);
   background-repeat: no-repeat, no-repeat, repeat;
   background-size: contain, contain;
-  background-position-x: left, 60vw;
+  background-position-x: left, 55vw;
   background-position-y: 0px;
   z-index: 10;
   display: flex;
@@ -47,7 +47,7 @@
   background-image: url(../../images/navigation/cowgirl1.png),
     url(../../images/navigation/cowgirl6.png),
     url(../../images/sectionBackgrounds/bg6.jpg);
-  background-position-x: left, 60vw;
+  background-position-x: left, 55vw;
   background-position-y: 0, 80px, 0;
 }
 
@@ -60,7 +60,7 @@
 .menuBtn {
   position: absolute;
   top: 30px;
-  height: 25px;
+  height: 3.5vh;
   width: 6vw;
   border-top: 2px solid #5e1205;
   border-bottom: 2px solid #5e1205;
@@ -81,9 +81,9 @@
 
 .title {
   position: absolute;
-  top: 58vh;
-  width: 500px;
-  font-size: 48px;
+  top: 54vh;
+  width: 30vw;
+  font-size: 3.2vw;
   color: #5e1205;
   font-family: "EngraversMT";
   letter-spacing: 6px;
@@ -94,7 +94,7 @@
 .mapLogo {
   position: absolute;
   top: 87vh;
-  height: 10vh;
+  height: 9vh;
   width: 5vw;
   cursor: pointer;
 }
@@ -105,7 +105,7 @@
 
 .menu {
   position: absolute;
-  left: 30vw;
+  left: 32vw;
   width: auto;
   height: 100%;
   display: flex;
@@ -136,6 +136,34 @@
 .links:hover {
   font-size: 75px;
   color: black;
+}
+
+@media only screen and (min-width: 1600px) {
+  .links {
+    font-size: 4vw;
+    line-height: 12vh;
+  }
+
+  .links:hover {
+    font-size: 5vw;
+  }
+
+  .menu {
+    left: 35vw;
+  }
+
+  .navigation4 {
+    background-position-x: left, 55vw;
+  }
+
+  .navigation5 {
+    background-position-x: left, 50vw;
+  }
+
+  .title {
+    width: 35vw;
+    font-size: 4.4vw;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -254,7 +282,7 @@
     position: relative;
     top: 50%;
     left: 0px;
-    margin-right: 40px;
+    z-index: 2;
   }
 
   .centerTitle {
@@ -262,21 +290,12 @@
     justify-content: center;
   }
 
-  .title {
-    position: relative;
-    width: auto;
-    left: -15px;
-    top: 40px;
-    font-size: 35px;
-    word-spacing: 80px;
-  }
-
   .bull {
     display: block;
     position: absolute;
     bottom: -45px;
     height: 180px;
-    width: 320px;
+    width: 400px;
     z-index: 1;
   }
 
@@ -284,6 +303,7 @@
     position: relative;
     top: 50%;
     left: 0;
+    z-index: 2;
   }
 
   .menu {
@@ -304,22 +324,13 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .title {
-    top: 38px;
-    font-size: 24px;
-    word-spacing: 60px;
-    left: -10px;
-  }
-
   .bull {
-    bottom: -20px;
-    height: 140px;
-    width: 240px;
+    height: 170px;
+    width: 350px;
   }
 
   .menuBtn {
     width: 8vw;
-    margin-right: 30px;
   }
 }
 
@@ -337,23 +348,20 @@
     bottom: 0px;
   }
 
-  .title {
-    display: none;
-  }
-
   .bull {
-    bottom: -12px;
-    height: 120px;
-    width: 180px;
+    bottom: -8px;
+    margin-left: -8px;
+    height: 130px;
+    width: 280px;
   }
 
   .menuBtn {
-    top: 50%;
-    margin-right: 0;
+    top: 75%;
     height: 15px;
   }
 
   .mapLogo {
+    top: 70%;
     height: 30px;
     width: 30px;
   }
@@ -368,10 +376,77 @@
   }
 }
 
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 1024px) and (min-height: 960px) {
+  .navigation,
+  .navigation2,
+  .navigation3,
+  .navigation4,
+  .navigation5 {
+    background-image: url(../../images/Depositphotos_12101795_xl-2015.jpg);
+    background-size: cover;
+    background-position-y: -40px;
+    background-position-x: center;
+    height: 115vh;
+    transform: translateY(-88%);
+  }
+
+  .visible {
+    background-image: url(../../images/sectionBackgrounds/bg6.jpg);
+    background-size: contain;
+    width: 100vw;
+    padding: 0 5vw;
+    height: 14vh;
+    position: absolute;
+    justify-content: space-between;
+    bottom: 10px;
+  }
+
+  #title,
+  .logo {
+    display: none;
+  }
+
+  .menuBtn {
+    position: relative;
+    top: 50%;
+    left: 0px;
+    z-index: 2;
+  }
+
+  .centerTitle {
+    display: flex;
+    justify-content: center;
+  }
+
   .bull {
-    bottom: -12px;
-    height: 100px;
-    width: 160px;
+    display: block;
+    position: absolute;
+    bottom: -2.2vh;
+    height: 180px;
+    width: 400px;
+    z-index: 1;
+  }
+
+  .mapLogo {
+    position: relative;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+  }
+
+  .menu {
+    width: 100%;
+    left: 0px;
+    align-items: center;
+  }
+
+  .links {
+    background-color: white;
+    font-size: 45px;
+    padding: 10px 20px;
+  }
+
+  .links:hover {
+    font-size: 45px;
   }
 }

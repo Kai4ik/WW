@@ -12,13 +12,17 @@
 .content {
   position: relative;
   height: 100%;
-  width: 100%;
+  width: 92%;
+  margin-left: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
   position: absolute;
   top: 75vh;
-  left: 33vw;
+  left: 30%;
   font-size: 65px;
   color: white;
   font-family: "EngraversMT";
@@ -26,9 +30,6 @@
 }
 
 .box {
-  position: absolute;
-  top: 40vh;
-  left: 43vw;
   width: 300px;
   height: 35vh;
   transform-style: preserve-3d;
@@ -66,33 +67,43 @@
   object-fit: cover;
 }
 
+@media only screen and (min-width: 1800px) {
+  .title {
+    left: 32%;
+    font-size: 4vw;
+  }
+
+  .box {
+    width: 20vw;
+  }
+
+  .box span {
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(480px);
+  }
+}
+
 @media only screen and (max-width: 1300px) {
   .gallerySection {
     background-position-x: 10vw;
   }
 
   .box {
-    left: 42vw;
     width: 280px;
   }
 
   .title {
-    left: 31vw;
+    left: 22vw;
   }
 }
 
 @media only screen and (max-width: 1160px) {
-  .box {
-    left: 41vw;
-  }
-
   .box span {
     transform: rotateY(calc(var(--i) * 45deg)) translateZ(380px);
   }
 
   .title {
     font-size: 55px;
-    left: 32vw;
+    left: 21vw;
   }
 }
 
@@ -101,18 +112,13 @@
     height: 100vh;
   }
 
-  .box {
-    top: 34vh;
-    left: 40vw;
-  }
-
   .box span {
     transform: rotateY(calc(var(--i) * 45deg)) translateZ(330px);
   }
 
   .title {
     top: 69vh;
-    left: 30vw;
+    left: 20vw;
   }
 }
 
@@ -122,9 +128,12 @@
     background-position-y: 30px;
   }
 
+  .content {
+    width: 100%;
+    margin-left: 0;
+  }
+
   .box {
-    top: 28vh;
-    left: 35vw;
     width: 250px;
     height: 35vh;
   }
@@ -146,10 +155,6 @@
     background-position-y: 50px;
   }
 
-  .box {
-    left: 32vw;
-  }
-
   .box span {
     transform: rotateY(calc(var(--i) * 45deg)) translateZ(260px);
   }
@@ -167,7 +172,6 @@
   }
 
   .box {
-    top: 22vh;
     width: 200px;
     height: 38vh;
   }
@@ -189,8 +193,6 @@
   }
 
   .box {
-    top: 25vh;
-    left: 35vw;
     width: 150px;
     height: 32vh;
   }
@@ -207,8 +209,6 @@
   }
 
   .box {
-    top: 22vh;
-    left: 35vw;
     width: 120px;
     animation: animate 10s linear infinite;
   }
@@ -218,26 +218,23 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
-  .box {
-    left: 32vw;
-  }
-}
-
-@media only screen and (max-width: 768px) and (min-height: 1024px) {
+@media only screen and (max-width: 1024px) and (min-height: 960px) {
   .gallerySection {
     height: 60vh;
     background-position-x: 2vw;
   }
 
+  .content {
+    width: 100%;
+    margin-left: 0;
+  }
+
   .box {
-    top: 20vh;
-    left: 30vw;
     width: 300px;
-    height: 25vh;
+    height: 22vh;
   }
 
   .title {
-    top: 45vh;
+    top: 42vh;
   }
 }

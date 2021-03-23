@@ -5,7 +5,7 @@ import { HashLink } from "react-router-hash-link";
 
 /* images */
 import logo from "../../images/navigation/logo-min.png";
-import bull from "../../images/bull.png";
+import bull from "../../images/bullWW.png";
 import contactUs from "../../images/navigation/contactUs.png";
 
 export const Navigation = () => {
@@ -111,7 +111,6 @@ export const Navigation = () => {
           Winchester Whiskey
         </div>
         <div className={styles.centerTitle}>
-          <div className={styles.title}>Winchester Whiskey</div>
           <img src={bull} alt="bull" className={styles.bull} id="bull" />
         </div>
         <img

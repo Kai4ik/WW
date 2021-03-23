@@ -13,7 +13,6 @@ export const ContactForm = () => {
     <div className={styles.formSection} id="showForm">
       <div className={styles.overlay} onClick={closeForm}></div>
       <div className={styles.contactForm}>
-        <h3 className={styles.contactUs}> Contact Us</h3>
         <div className={styles.form}>
           <div className={styles.formField}>
             <label htmlFor="fullName"> Full Name </label>

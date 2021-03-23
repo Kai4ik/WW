@@ -6,15 +6,17 @@ header {
 }
 
 /* Video background properties */
-.bgVideo {
-  width: 100%;
+.bgVideo,
+.bgVideo2 {
+  height: 100%;
+  width: 210vh;
+  min-width: 100%;
+  min-height: 56.25vw;
   z-index: 0;
 }
 
-/* Video background properties */
 .bgVideo2 {
-  width: 130%;
-  z-index: 0;
+  width: 270vh;
 }
 
 .videoOverlay {
@@ -69,14 +71,14 @@ header svg {
 
 .title {
   color: white;
-  font-size: 160px;
+  font-size: 11vw;
   font-family: "EngraversMT";
   letter-spacing: 4px;
 }
 
 .slogan {
   color: white;
-  font-size: 35px;
+  font-size: 2vw;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 6px;
@@ -86,11 +88,11 @@ header svg {
   position: relative;
   top: 22vh;
   border: none;
-  width: 220px;
-  height: 60px;
+  width: 15vw;
+  height: 8vh;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 34px;
+  font-size: 2vw;
   font-family: "EngraversMT";
   color: #5e1205;
   background-color: #ebd3a6;
@@ -102,75 +104,29 @@ header svg {
   color: black;
 }
 
-@media only screen and (max-width: 1300px) {
-  .title {
-    font-size: 130px;
-  }
-
-  .bgVideo {
-    width: 120%;
-  }
-
-  .bgVideo2 {
-    width: 150%;
-  }
-}
-
-@media only screen and (max-width: 1130px) {
-  .title {
-    font-size: 110px;
-  }
-
-  .bgVideo {
-    width: 130%;
-  }
-
-  .bgVideo2 {
-    width: 170%;
-  }
-}
-
 @media only screen and (max-width: 1000px) {
   header {
     height: 100vh;
-  }
-
-  .title {
-    font-size: 98px;
-  }
-
-  .slogan {
-    font-size: 24px;
   }
 
   .transition {
     top: 95vh;
   }
 
-  .bgVideo {
-    width: 140%;
+  .slogan {
+    font-size: 2.5vw;
   }
 
-  .bgVideo2 {
-    width: 190%;
+  .learnMore {
+    width: 20vw;
+    height: 9vh;
+    font-size: 3vw;
   }
 }
 
 @media only screen and (max-width: 900px) {
   header {
     margin-top: 70px;
-  }
-
-  .bgVideo {
-    width: 165%;
-  }
-
-  .bgVideo2 {
-    width: 220%;
-  }
-
-  .title {
-    font-size: 90px;
   }
 
   .headline {
@@ -189,8 +145,9 @@ header svg {
 }
 
 @media only screen and (max-width: 768px) {
-  .bgVideo {
-    width: 170%;
+  .bgVideo,
+  .bgVideo2 {
+    display: none;
   }
 
   .learnMore {
@@ -198,25 +155,16 @@ header svg {
   }
 
   header {
+    background-image: url(../../images/bg7.jpg);
+    background-size: cover;
+    background-position-y: -250px;
     height: 90vh;
-    margin-top: 80px;
-  }
-
-  .title {
-    font-size: 75px;
+    margin-top: 12vh;
   }
 }
 
 @media only screen and (max-width: 640px) {
-  .bgVideo,
-  .bgVideo2 {
-    display: none;
-  }
-
   header {
-    background-image: url(../../images/bg7.jpg);
-    background-size: cover;
-    background-position-y: -250px;
     height: 84vh;
   }
 
@@ -270,12 +218,27 @@ header svg {
   }
 }
 
-@media only screen and (max-width: 768px) and (min-height: 1024px) {
+@media only screen and (max-width: 1024px) and (min-height: 960px) {
   header {
     height: 68vh;
+    margin-top: 12vh;
+  }
+
+  .headline {
+    width: 93vw;
+    left: 4vw;
   }
 
   .learnMore {
     top: 17vh;
+    height: 5vh;
+  }
+
+  .bgVideo {
+    width: 120vh;
+  }
+
+  .bgVideo2 {
+    width: 160vh;
   }
 }

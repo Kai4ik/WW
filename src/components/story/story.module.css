@@ -29,7 +29,7 @@
 
 .heading {
   color: white;
-  font-size: 80px;
+  font-size: 5vw;
   font-family: "EngraversMT";
   letter-spacing: 7px;
   position: relative;
@@ -38,31 +38,10 @@
 }
 
 .storyParagraph {
-  margin: 50px 0;
+  margin: 6vh 0;
   letter-spacing: 2px;
-  font-size: 25px;
+  font-size: 2vw;
   color: white;
-}
-
-@media only screen and (max-width: 1160px) {
-  .heading {
-    font-size: 65px;
-  }
-
-  .storyParagraph {
-    margin: 40px 0;
-    font-size: 22px;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .heading {
-    font-size: 55px;
-  }
-
-  .storyParagraph {
-    font-size: 20px;
-  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -75,6 +54,14 @@
     margin: 5vh 5vw;
     margin-top: 20vh;
   }
+
+  .storyParagraph {
+    font-size: 3vw;
+  }
+
+  .heading {
+    font-size: 8vw;
+  }
 }
 
 @media only screen and (max-width: 630px) {
@@ -83,13 +70,17 @@
   }
 
   .storyParagraph {
-    font-size: 18px;
+    font-size: 4vw;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .content {
     padding: 0 30px;
+  }
+
+  .storyParagraph {
+    font-size: 5vw;
   }
 }
 
@@ -103,12 +94,14 @@
   }
 }
 
-@media only screen and (max-width: 768px) and (min-height: 1024px) {
+@media only screen and (max-width: 1024px) and (min-height: 960px) {
   .storySection {
     height: 60vh;
   }
 
   .content {
-    margin-top: 14vh;
+    width: 90vw;
+    margin: 5vh 5vw;
+    margin-top: 10vh;
   }
 }
